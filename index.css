@@ -1,6 +1,7 @@
 /* Turned header into flexbox in order to have title and nav select display side by side */
 header {
   width: 100%;
+  height: auto;
   background-color: #333333;
   color: white;
   position: fixed;
@@ -18,7 +19,7 @@ header > h1 {
 }
 
 nav {
-    width: 40%;
+  width: 40%;
 }
 
 /* Flexbox separate from the header */
@@ -30,33 +31,41 @@ nav {
   align-items: center;
   flex-flow: wrap row;
   background-color: lightcyan;
+  border-radius: 15px;
+  padding: 10px;
 }
 
 #profile_pic {
-    width: 40%;
+  width: 40%;
+  padding: 4%;
 }
 
 /* This affects the paragraph/about text blurb */
 .section_1 p {
-    width: 100%;
+  width: 100%;
   background-color: aqua;
 }
 
-#footer {
-    text-align: center;
+#camera_table {
     width: 100%;
+    text-align: center;
+}
+
+#footer {
+  text-align: center;
+  width: 100%;
   background-color: lightcoral;
   position: fixed;
   bottom: 0;
 }
 
 .section_1 {
-    outline: 1px solid blue;
+  outline: 1px solid blue;
 }
 
 .section_2 {
-    width: 100%;
-outline: 1px solid red;
+  width: 100%;
+  outline: 1px solid red;
 }
 
 /* Used to hide the label for nav selector while still keeping the label for accessibility purposes */
