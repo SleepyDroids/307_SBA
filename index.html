@@ -5,22 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./index.css" type="text/css" />
     <title>307 SBA - Joe's Photography</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        /* Using flexbox to center all content on the screen */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* To stop the header and main content from 'squishing' into each other */
+        flex-wrap: wrap;
+      }
+
+      /* For any bolded text, created by using an inline <span> tag */
+      .bold {
+        font-weight: bold;
+      }
+    </style>
   </head>
   <body>
     <!-- Current Objective:
      1. Begin with a general structure of the overall page (ie. flexbox)
      2. Work on title and navigation drop down menu -->
 
-<!-- This is the header intended to be the main structure across all pages for consistency -->
+    <!-- This is the header intended to be the main structure across all pages for consistency -->
     <header>
       <h1>Joe's Photography</h1>
       <nav>
         <label for="nav_select">navigation</label>
-        <select
-          id="nav_select"
-          onchange="window.location.href=this.value;"
-        >
-          <option value="#">navigation</option>
+        <!-- Will figure out how this onchange() function works later -->
+        <select id="nav_select" onchange="window.location.href=this.value;">
+          <option value="#">Select a page</option>
           <option value="./index.html">About</option>
           <option value="./gallery.html">Gallery</option>
           <option value="./commission.html">Commissions</option>
@@ -29,12 +44,16 @@
     </header>
 
     <!-- The meat of the index/about page, includes info about the photographer -->
-    <main>
-      <section>
+    <main id="main_content">
+      <section class="section_1">
         <img
+        id="profile_pic"
+        style="float: left;"
           src="./images/profile_pic.jpg"
           alt="black and white photo of the photographer with sony brand camera"
         />
+
+        <h2>About the photographer</h2>
 
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
@@ -42,15 +61,34 @@
           magnam aliquam ab dolorem corporis molestias praesentium molestiae
           temporibus laboriosam dolor excepturi necessitatibus perspiciatis!
         </p>
+
+                <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+          mollitia odio repudiandae consequuntur natus explicabo quibusdam,
+          magnam aliquam ab dolorem corporis molestias praesentium molestiae
+          temporibus laboriosam dolor excepturi necessitatibus perspiciatis!
+        </p>
+
+                <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+          mollitia odio repudiandae consequuntur natus explicabo quibusdam,
+          magnam aliquam ab dolorem corporis molestias praesentium molestiae
+          temporibus laboriosam dolor excepturi necessitatibus perspiciatis!
+        </p>
+
+                       <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+          mollitia odio repudiandae consequuntur natus explicabo quibusdam,
+          magnam aliquam ab dolorem corporis molestias praesentium molestiae
+          temporibus laboriosam dolor excepturi necessitatibus perspiciatis!
+        </p>
       </section>
       <!-- Table section of most commonly used cameras -->
-      <section>
-        most commonly used equipment table
-    </section>
+      <section class="section_2">most commonly used equipment table</section>
     </main>
 
     <!-- Base footer that will include a signup for newsletter form and credit tag -->
-    <footer>
+    <footer id="footer">
       sign up for newsletter form + &copy; joe's photography + credit for coding
       work
     </footer>
