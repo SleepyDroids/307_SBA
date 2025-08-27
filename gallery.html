@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
+        <!-- Additional font meant to be used for the main header text -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
     <title>307 SBA - Joe's Photography - Gallery</title>
     <style>
       #gallery {
@@ -23,17 +27,19 @@
       }
 
       .img_gall {
-        max-width: 16%;
+        /* Using the min() for better responsiveness when the viewport becomes smaller so that the photos don't get too squished on a smaller screen and get pushed into a singular column */
+        width: min(50vw, 200px);
+        /* min(first value refers to breakpoint, width of img) */
         background-color: #fffcf2;
         padding: 2rem;
+        margin: auto;
         /* Transition: property name | duration | easing function | decided not to use delay */
         transition: transform 0.3s ease-in-out;
       }
 
       .img_gall:hover {
         /* Using the scale() so when user hovers over an img, it makes the img bigger to about 120% of the original proportions */
-        transform: scale(1.2);
-        margin: auto;
+        transform: scale(1.4);
       }
     </style>
   </head>
@@ -147,11 +153,10 @@
 
       <div id="copyright">
         <p>
-          &copy; Joe Marinaro Photography 1991 - Present <br />
+          &copy; Joe Marinaro Photography 1991 - Present &middot;
           Web Design credit goes to
           <a href="https://github.com/SleepyDroids" target="_blank"
-            >@SleepyDroids</a
-          >
+            >@SleepyDroids</a>
           &middot; Icon credit goes to
           <a href="https://icons8.com/" target="_blank">icons8</a>
         </p>
