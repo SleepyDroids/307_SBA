@@ -29,7 +29,8 @@ body {
 header {
   width: 100%;
   height: auto;
-  background-color: #252422;
+  /* Converted hex code into rgba to make the background semi-opague but make sure the text was unaffected by opacity */
+  background-color: rgba(37, 36, 34, 0.8);
   color: #fffcf2;
   position: fixed;
   top: 0;
@@ -96,7 +97,7 @@ select {
   text-align: center;
   font-size: 0.65rem;
   width: 100%;
-  background-color: #252422;
+  background-color: rgba(37, 36, 34, 0.8);
   color: #fffcf2;
   position: fixed;
   bottom: 0;
