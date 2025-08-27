@@ -1,178 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <!-- Embedded font from google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>307 SBA - Joe's Photography - About</title>
+    <!-- Using a universal style sheet for all pages, unique elements will go into the internal style per each .html file -->
+    <style>
+      /* Flexbox separate from the header */
+      #main_content {
+        width: 50%;
+        /* Added margin to not block off the container content bc of the header & footer */
+        margin: 7.5rem auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-flow: wrap row;
+        background-color: #fffcf2;
+        border-radius: 15px;
+        padding: 10px;
+      }
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./style.css" type="text/css" />
-  <!-- Embedded font from google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap"
-    rel="stylesheet" />
-  <title>307 SBA - Joe's Photography - About</title>
-  <!-- Using a universal style sheet for all pages, unique elements will go into the internal style per each .html file -->
-  <style>
-/* Flexbox separate from the header */
-    #main_content {
-      width: 50%;
-      /* Added margin to not block off the container content bc of the header & footer */
-      margin: 7.5rem auto;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      flex-flow: wrap row;
-      background-color: #FFFCF2;
-      border-radius: 15px;
-      padding: 10px;
-    }
+      #profile_pic {
+        width: 40%;
+        padding: 4%;
+      }
 
-    #profile_pic {
-      width: 40%;
-      padding: 4%;
-    }
+      /* This affects the paragraph/about text blurb */
+      .section_1 p {
+        width: 100%;
+      }
 
-    /* This affects the paragraph/about text blurb */
-    .section_1 p {
-      width: 100%;
-    }
+      #camera_table {
+        width: 100%;
+        text-align: center;
+      }
+    </style>
+  </head>
 
-    #camera_table {
-      width: 100%;
-      text-align: center;
-    }
-  </style>
-</head>
+  <body>
+    <!-- Current objective: continue to work on customizing the index page, add animations  -->
 
-<body>
-  <!-- Current objective: continue to work on customizing the index page, add animations  -->
+    <!-- This is the header intended to be the main structure across all pages for consistency -->
+    <header>
+      <h1>Joe's Photography</h1>
+      <nav>
+        <label for="nav_select">navigation</label>
+        <!-- Will figure out how this onchange() function works later -->
+        <select id="nav_select" onchange="window.location.href=this.value;">
+          <label for="navigation">Navigation</label>
+          <option value="#" id="navigation">navigation</option>
+          <label for="about">About</label>
+          <option value="./index.html" id="about">About</option>
+          <label for="gallery">Gallery</label>
+          <option value="./gallery.html" id="gallery">Gallery</option>
+          <label for="commissions">Commissions</label>
+          <option value="./commission.html" id="commissions">
+            Commissions
+          </option>
+        </select>
+      </nav>
+    </header>
 
-  <!-- This is the header intended to be the main structure across all pages for consistency -->
-  <header>
-    <h1>Joe's Photography</h1>
-    <nav>
-      <label for="nav_select">navigation</label>
-      <!-- Will figure out how this onchange() function works later -->
-      <select id="nav_select" onchange="window.location.href=this.value;">
-        <label for="navigation">Navigation</label>
-        <option value="#" id="navigation">navigation</option>
-        <label for="about">About</label>
-        <option value="./index.html" id="about">About</option>
-        <label for="gallery">Gallery</label>
-        <option value="./gallery.html" id="gallery">Gallery</option>
-        <label for="commissions">Commissions</label>
-        <option value="./commission.html" id="commissions">Commissions</option>
-      </select>
-    </nav>
-  </header>
+    <!-- The meat of the index/about page, includes info about the photographer -->
+    <main id="main_content">
+      <section class="section_1">
+        <img
+          id="profile_pic"
+          style="float: left"
+          src="./images/profile_pic.jpg"
+          alt="black and white photo of the photographer with sony brand camera"
+        />
 
-  <!-- The meat of the index/about page, includes info about the photographer -->
-  <main id="main_content">
-    <section class="section_1">
-      <img id="profile_pic" style="float: left" src="./images/profile_pic.jpg"
-        alt="black and white photo of the photographer with sony brand camera" />
+        <h2 style="text-align: right">About the photographer</h2>
 
-      <h2 style="text-align: right">About the photographer</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+          mollitia odio repudiandae consequuntur natus explicabo quibusdam,
+          magnam aliquam ab dolorem corporis molestias praesentium molestiae
+          temporibus laboriosam dolor excepturi necessitatibus perspiciatis!
+        </p>
 
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-        mollitia odio repudiandae consequuntur natus explicabo quibusdam,
-        magnam aliquam ab dolorem corporis molestias praesentium molestiae
-        temporibus laboriosam dolor excepturi necessitatibus perspiciatis!
-      </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+          mollitia odio repudiandae consequuntur natus explicabo quibusdam,
+          magnam aliquam ab dolorem corporis molestias praesentium molestiae
+          temporibus laboriosam dolor excepturi necessitatibus perspiciatis!
+        </p>
 
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-        mollitia odio repudiandae consequuntur natus explicabo quibusdam,
-        magnam aliquam ab dolorem corporis molestias praesentium molestiae
-        temporibus laboriosam dolor excepturi necessitatibus perspiciatis!
-      </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+          mollitia odio repudiandae consequuntur natus explicabo quibusdam,
+          magnam aliquam ab dolorem corporis molestias praesentium molestiae
+          temporibus laboriosam dolor excepturi necessitatibus perspiciatis!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+          mollitia odio repudiandae consequuntur natus explicabo quibusdam,
+          magnam aliquam ab dolorem corporis molestias praesentium molestiae
+          temporibus laboriosam dolor excepturi necessitatibus perspiciatis!
+        </p>
+      </section>
+      <!-- Table section of most commonly used cameras -->
+      <section class="section_2">
+        <!-- Created a table based upon Joe's most commonly used cameras -->
+        <table id="camera_table">
+          <th>Most commonly used cameras</th>
+          <tr>
+            <th>Name</th>
+            <th>Maker</th>
+            <th>Model</th>
+            <th>Type</th>
+          </tr>
 
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-        mollitia odio repudiandae consequuntur natus explicabo quibusdam,
-        magnam aliquam ab dolorem corporis molestias praesentium molestiae
-        temporibus laboriosam dolor excepturi necessitatibus perspiciatis!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-        mollitia odio repudiandae consequuntur natus explicabo quibusdam,
-        magnam aliquam ab dolorem corporis molestias praesentium molestiae
-        temporibus laboriosam dolor excepturi necessitatibus perspiciatis!
-      </p>
-    </section>
-    <!-- Table section of most commonly used cameras -->
-    <section class="section_2">
-      <!-- Created a table based upon Joe's most commonly used cameras -->
-      <table id="camera_table">
-        <th>Most commonly used cameras</th>
-        <tr>
-          <th>Name</th>
-          <th>Maker</th>
-          <th>Model</th>
-          <th>Type</th>
-        </tr>
+          <tr>
+            <td>Nikon d780</td>
+            <td>Nikon</td>
+            <td>D780</td>
+            <td>DSLR</td>
+          </tr>
 
-        <tr>
-          <td>Nikon d780</td>
-          <td>Nikon</td>
-          <td>D780</td>
-          <td>DSLR</td>
-        </tr>
+          <tr>
+            <td>Nikon d7200</td>
+            <td>Nikon</td>
+            <td>D7200</td>
+            <td>DSLR</td>
+          </tr>
 
-        <tr>
-          <td>Nikon d7200</td>
-          <td>Nikon</td>
-          <td>D7200</td>
-          <td>DSLR</td>
-        </tr>
+          <tr>
+            <td>Minolta XK</td>
+            <td>Minolta</td>
+            <td>XK, XM</td>
+            <td>35mm SLR</td>
+          </tr>
 
-        <tr>
-          <td>Minolta XK</td>
-          <td>Minolta</td>
-          <td>XK, XM</td>
-          <td>35mm SLR</td>
-        </tr>
+          <tr>
+            <td>Minolta SR-T 101</td>
+            <td>Minolta</td>
+            <td>SR-T 101</td>
+            <td>35mm SLR</td>
+          </tr>
 
-        <tr>
-          <td>Minolta SR-T 101</td>
-          <td>Minolta</td>
-          <td>SR-T 101</td>
-          <td>35mm SLR</td>
-        </tr>
+          <tr>
+            <td>Zorki 4</td>
+            <td>Krasnogorskiy Zavod</td>
+            <td>4</td>
+            <td>35mm rangefinder camera</td>
+          </tr>
+        </table>
+      </section>
+    </main>
 
-        <tr>
-          <td>Zorki 4</td>
-          <td>Krasnogorskiy Zavod</td>
-          <td>4</td>
-          <td>35mm rangefinder camera</td>
-        </tr>
-      </table>
-    </section>
-  </main>
+    <!-- Base footer that will include a signup for newsletter form and credit tag -->
+    <footer id="footer">
+      <form action="#">
+        <!-- Server side, going to learn how to do this for real -->
+        <p>
+          <label for="email">Email</label>
+          Stay up to date with <span class="bold">Joe's photogprahy</span> with
+          a monthly newsletter:
+          <input
+            type="text"
+            placeholder="Your email address"
+            name="email"
+            required
+          />
+          <input type="submit" value="Subscribe" />
+        </p>
+      </form>
 
-  <!-- Base footer that will include a signup for newsletter form and credit tag -->
-  <footer id="footer">
-    <p>
-    <form action="#">
-      <!-- Server side, going to learn how to do this for real -->
-      <label for="email">Email</label>
-      Stay up to date with <span class="bold">Joe's photogprahy</span> with a monthly newsletter:
-      <input type="text" placeholder="Your email address" name="email" required>
-      <input type="submit" value="Subscribe">
-
-    </form>
-    </p>
-
-    <div id="copyright">
-      <p>
-        &copy; Joe Marinaro Photography 1991 - Present <br /> Web Design credit goes to <a
-          href="https://github.com/SleepyDroids" target="_blank">@SleepyDroids</a> &middot; Icon credit goes to <a
-          href="https://icons8.com/" target="_blank">icons8</a>
-
-      </p>
-    </div>
-  </footer>
-</body>
-
+      <div id="copyright">
+        <p>
+          &copy; Joe Marinaro Photography 1991 - Present <br />
+          Web Design credit goes to
+          <a href="https://github.com/SleepyDroids" target="_blank"
+            >@SleepyDroids</a
+          >
+          &middot; Icon credit goes to
+          <a href="https://icons8.com/" target="_blank">icons8</a>
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>

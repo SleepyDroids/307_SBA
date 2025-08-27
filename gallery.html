@@ -1,108 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" type="text/css" />
     <!-- Embedded font from google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap"
-        rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
     <title>307 SBA - Joe's Photography - Gallery</title>
     <style>
-        #gallery {
-            width: 100%;
-            margin: 7.5rem 1rem;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            flex-flow: wrap row;
-        }
+      #gallery {
+        width: 100%;
+        margin: 7.5rem 1rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-flow: wrap row;
+      }
 
-        .img_gall {
-            max-width: 16%;
-            background-color: #FFFCF2;
-            padding: 2rem;
-            /* Transition: property name | duration | easing function | decided not to use delay */
-            transition: transform .3s ease-in-out;
-        }
+      .img_gall {
+        max-width: 16%;
+        background-color: #fffcf2;
+        padding: 2rem;
+        /* Transition: property name | duration | easing function | decided not to use delay */
+        transition: transform 0.3s ease-in-out;
+      }
 
-        .img_gall:hover {
-            /* Using the scale() so when user hovers over an img, it makes the img bigger to about 120% of the original proportions */
-            transform: scale(1.2);
-            margin: auto;
-        }
+      .img_gall:hover {
+        /* Using the scale() so when user hovers over an img, it makes the img bigger to about 120% of the original proportions */
+        transform: scale(1.2);
+        margin: auto;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Current objective: continue to work on customizing the index page, add animations  -->
 
     <!-- This is the header intended to be the main structure across all pages for consistency -->
     <header>
-        <h1>Joe's Photography</h1>
-        <nav>
-            <label for="nav_select">navigation</label>
-            <!-- Will figure out how this onchange() function works later -->
-            <select id="nav_select" onchange="window.location.href=this.value;">
-                <label for="navigation">Navigation</label>
-                <option value="#" id="navigation">navigation</option>
-                <label for="about">About</label>
-                <option value="./index.html" id="about">About</option>
-                <label for="gallery">Gallery</label>
-                <option value="./gallery.html" id="gallery">Gallery</option>
-                <label for="commissions">Commissions</label>
-                <option value="./commission.html" id="commissions">Commissions</option>
-            </select>
-        </nav>
+      <h1>Joe's Photography</h1>
+      <nav>
+        <label for="nav_select">navigation</label>
+        <!-- Will figure out how this onchange() function works later -->
+        <select id="nav_select" onchange="window.location.href=this.value;">
+          <label for="navigation">Navigation</label>
+          <option value="#" id="navigation">navigation</option>
+          <label for="about">About</label>
+          <option value="./index.html" id="about">About</option>
+          <label for="gallery">Gallery</label>
+          <option value="./gallery.html" id="gallery">Gallery</option>
+          <label for="commissions">Commissions</label>
+          <option value="./commission.html" id="commissions">
+            Commissions
+          </option>
+        </select>
+      </nav>
     </header>
 
     <!-- Will be adding a gallery of his photography here soon -->
     <main id="gallery">
-        <img src="./images/gallery/bird-on-wire.jpeg" alt="black bird perched on powerline cable" class="img_gall">
-        <img src="./images/gallery/bridge.jpeg" alt="picture of a bridge and the skyline" class="img_gall">
+      <img
+        src="./images/gallery/bird-on-wire.jpeg"
+        alt="black bird perched on powerline cable"
+        class="img_gall"
+      />
+      <img
+        src="./images/gallery/bridge.jpeg"
+        alt="picture of a bridge and the skyline"
+        class="img_gall"
+      />
 
-
-        <img src="./images/gallery/bw-disco-ball.jpeg" alt="black and white photo of a disco ball" class="img_gall">
-        <img src="./images/gallery/sky-boat.jpeg" alt="partial picture of a boat with a blue sky in the background"
-            class="img_gall">
-        <img src="./images/gallery/pink-flowers.jpeg" alt="close up of pink flowers" class="img_gall">
-        <img src="./images/gallery/bw-man-building.jpeg" alt="black and white photo of a man outside a building"
-            class="img_gall">
-        <img src="./images/gallery/person-fishing.jpeg" alt="picture of person fishing from behind" class="img_gall">
-        <img src="./images/gallery/bw-mill.jpeg" alt="black and white photo of a mill and field" class="img_gall">
-        <img src="./images/gallery/man-with-dog.jpeg" alt="man on a hill with dog by his side" class="img_gall">
-        <img src="./images/gallery/doggo-indie.jpeg" alt="best pupper in the world by far miss indie" class="img_gall">
-        <img src="./images/gallery/bw-becky-cat.jpeg" alt="black and white photo of a woman holding a cat"
-            class="img_gall">
-        <img src="./images/gallery/bw-menace-girl.jpeg"
-            alt="black and white photo of a girl staring menacingly at the camera" class="img_gall">
+      <img
+        src="./images/gallery/bw-disco-ball.jpeg"
+        alt="black and white photo of a disco ball"
+        class="img_gall"
+      />
+      <img
+        src="./images/gallery/sky-boat.jpeg"
+        alt="partial picture of a boat with a blue sky in the background"
+        class="img_gall"
+      />
+      <img
+        src="./images/gallery/pink-flowers.jpeg"
+        alt="close up of pink flowers"
+        class="img_gall"
+      />
+      <img
+        src="./images/gallery/bw-man-building.jpeg"
+        alt="black and white photo of a man outside a building"
+        class="img_gall"
+      />
+      <img
+        src="./images/gallery/person-fishing.jpeg"
+        alt="picture of person fishing from behind"
+        class="img_gall"
+      />
+      <img
+        src="./images/gallery/bw-mill.jpeg"
+        alt="black and white photo of a mill and field"
+        class="img_gall"
+      />
+      <img
+        src="./images/gallery/man-with-dog.jpeg"
+        alt="man on a hill with dog by his side"
+        class="img_gall"
+      />
+      <img
+        src="./images/gallery/doggo-indie.jpeg"
+        alt="best pupper in the world by far miss indie"
+        class="img_gall"
+      />
+      <img
+        src="./images/gallery/bw-becky-cat.jpeg"
+        alt="black and white photo of a woman holding a cat"
+        class="img_gall"
+      />
+      <img
+        src="./images/gallery/bw-menace-girl.jpeg"
+        alt="black and white photo of a girl staring menacingly at the camera"
+        class="img_gall"
+      />
     </main>
 
     <!-- Base footer that will include a signup for newsletter form and credit tag -->
     <footer id="footer">
+      <form action="#">
+        <!-- Server side, going to learn how to do this for real -->
         <p>
-        <form action="#">
-            <!-- Server side, going to learn how to do this for real -->
-            <label for="email">Email</label>
-            Stay up to date with <span class="bold">Joe's photogprahy</span> with a monthly newsletter:
-            <input type="text" placeholder="Your email address" name="email" required>
-            <input type="submit" value="Subscribe">
-
-        </form>
+          <label for="email">Email</label>
+          Stay up to date with <span class="bold">Joe's photogprahy</span> with
+          a monthly newsletter:
+          <input
+            type="text"
+            placeholder="Your email address"
+            name="email"
+            required
+          />
+          <input type="submit" value="Subscribe" />
         </p>
+      </form>
 
-        <div id="copyright">
-            <p>
-                &copy; Joe Marinaro Photography 1991 - Present <br /> Web Design credit goes to <a
-                    href="https://github.com/SleepyDroids" target="_blank">@SleepyDroids</a> &middot; Icon credit goes
-                to <a href="https://icons8.com/" target="_blank">icons8</a>
-
-            </p>
-        </div>
+      <div id="copyright">
+        <p>
+          &copy; Joe Marinaro Photography 1991 - Present <br />
+          Web Design credit goes to
+          <a href="https://github.com/SleepyDroids" target="_blank"
+            >@SleepyDroids</a
+          >
+          &middot; Icon credit goes to
+          <a href="https://icons8.com/" target="_blank">icons8</a>
+        </p>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
