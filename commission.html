@@ -1,11 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" type="text/css" />
+  <!-- Embedded font from google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet" />
+  <title>307 SBA - Joe's Photography - Commissions</title>
+  <style>
+/* Flexbox separate from the header */
+    #main_content {
+      width: 50%;
+      /* Added margin to not block off the container content bc of the header & footer */
+      margin: 7.5rem auto;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-flow: wrap row;
+      background-color: #FFFCF2;
+      border-radius: 15px;
+      padding: 10px;
+    }
+
+  </style>
 </head>
+
 <body>
-    
+  <!-- Current objective: continue to work on customizing the index page, add animations  -->
+
+  <!-- This is the header intended to be the main structure across all pages for consistency -->
+  <header>
+    <h1>Joe's Photography</h1>
+    <nav>
+      <label for="nav_select">navigation</label>
+      <!-- Will figure out how this onchange() function works later -->
+      <select id="nav_select" onchange="window.location.href=this.value;">
+        <label for="navigation">Navigation</label>
+        <option value="#" id="navigation">navigation</option>
+        <label for="about">About</label>
+        <option value="./index.html" id="about">About</option>
+        <label for="gallery">Gallery</label>
+        <option value="./gallery.html" id="gallery">Gallery</option>
+        <label for="commissions">Commissions</label>
+        <option value="./commission.html" id="commissions">Commissions</option>
+      </select>
+    </nav>
+  </header>
+
+  <!-- Will figure out how to structure this later -->
+  <main id="main_content">
+    Commission information and new content will go here
+  </main>
+
+  <!-- Base footer that will include a signup for newsletter form and credit tag -->
+  <footer id="footer">
+    <p>
+    <form action="#">
+      <!-- Server side, going to learn how to do this for real -->
+      <label for="email">Email</label>
+      Stay up to date with <span class="bold">Joe's photogprahy</span> with a monthly newsletter:
+      <input type="text" placeholder="Your email address" name="email" required>
+      <input type="submit" value="Subscribe">
+
+    </form>
+    </p>
+
+    <div id="copyright">
+      <p>
+        &copy; Joe Marinaro Photography 1991 - Present <br /> Web Design credit goes to <a
+          href="https://github.com/SleepyDroids" target="_blank">@SleepyDroids</a> &middot; Icon credit goes to <a
+          href="https://icons8.com/" target="_blank">icons8</a>
+
+      </p>
+    </div>
+  </footer>
 </body>
+
 </html>

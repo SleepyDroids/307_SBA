@@ -4,43 +4,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./index.css" type="text/css" />
+  <link rel="stylesheet" href="./style.css" type="text/css" />
   <!-- Embedded font from google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap"
     rel="stylesheet" />
-  <title>307 SBA - Joe's Photography</title>
+  <title>307 SBA - Joe's Photography - About</title>
+  <!-- Using a universal style sheet for all pages, unique elements will go into the internal style per each .html file -->
   <style>
-    body {
-      background-color: #CCC5B9;
-      padding: 0;
-      margin: 0;
-      /* Using flexbox to center all content on the screen */
+/* Flexbox separate from the header */
+    #main_content {
+      width: 50%;
+      /* Added margin to not block off the container content bc of the header & footer */
+      margin: 7.5rem auto;
       display: flex;
-      justify-content: center;
+      justify-content: space-evenly;
       align-items: center;
-      /* To stop the header and main content from 'squishing' into each other */
-      flex-wrap: wrap;
-      /* CSS needed to make font work, provided by google fonts */
-      font-family: "Victor Mono", monospace;
-      font-size: 0.75rem;
-      font-optical-sizing: auto;
-      font-weight: normal;
-      font-style: normal;
+      flex-flow: wrap row;
+      background-color: #FFFCF2;
+      border-radius: 15px;
+      padding: 10px;
     }
 
-    /* For any bolded text, created by using an inline <span> tag */
-    .bold {
-      font-weight: bold;
+    #profile_pic {
+      width: 40%;
+      padding: 4%;
+    }
+
+    /* This affects the paragraph/about text blurb */
+    .section_1 p {
+      width: 100%;
+    }
+
+    #camera_table {
+      width: 100%;
+      text-align: center;
     }
   </style>
 </head>
 
 <body>
-  <!-- Current Objective:
-     1. Begin with a general structure of the overall page (ie. flexbox)
-     2. Work on title and navigation drop down menu -->
+  <!-- Current objective: continue to work on customizing the index page, add animations  -->
 
   <!-- This is the header intended to be the main structure across all pages for consistency -->
   <header>
