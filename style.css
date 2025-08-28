@@ -42,7 +42,7 @@ header {
 
 /* The text header of the page */
 header > h1 {
-    font-family: "Patua One", serif;
+  font-family: "Patua One", serif;
   width: 50%;
   text-transform: lowercase;
   font-weight: bold;

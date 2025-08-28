@@ -11,12 +11,15 @@
       href="https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
-        <!-- Additional font meant to be used for the main header text -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
-<!-- Adding a custon favicon just because -->
-<link rel="icon" type="image/x-icon" href="./images/icons8-camera-60.png" />
+    <!-- Additional font meant to be used for the main header text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Adding a custon favicon just because -->
+    <link rel="icon" type="image/x-icon" href="./images/icons8-camera-60.png" />
     <title>307 SBA - Joe's Photography - Commissions</title>
     <style>
       /* Flexbox separate from the header */
@@ -31,13 +34,39 @@
         background-color: #fffcf2;
         border-radius: 15px;
         padding: 10px;
+        text-align: center;
+        font-size: .7rem;
+        /* Added align-items to force both of the h3s of the lists to align with one another */
+        align-items: stretch;
+      }
+
+      #img_carousel {
+        width: 100%;
+      }
+
+      .services {
+        width: 50%;
+
+      }
+
+      .services h3, #comm_request h3 {
+          font-family: "Patua One", serif;
+          text-transform: uppercase;
+          background-color: #eb5e28;
+          color: #fffcf2;
+      }
+
+      ul>li {
+        list-style-type: circle;
+      }
+
+      #comm_request {
+        width: 100%;
       }
     </style>
   </head>
 
   <body>
-    <!-- Current objective: continue to work on customizing the index page, add animations  -->
-
     <!-- This is the header intended to be the main structure across all pages for consistency -->
     <header>
       <h1>Joe's Photography</h1>
@@ -59,9 +88,42 @@
       </nav>
     </header>
 
-    <!-- Will figure out how to structure this later -->
+<!-- Objectives: 1. Add image carousel at the top
+ 2. Two unordeed lists talking about commission prices/services he offers
+ 3. Submission form requesting a commission -->
     <main id="main_content">
-      Commission information and new content will go here
+
+      <!-- Image carousel will go here to showcase Joe's work -->
+      <div id="img_carousel">
+        image carousel will go here
+      </div>
+
+      <!-- Just using ol for additional html tags -->
+      <div class="services">
+        <h3>Services Offered</h3>
+        <ul>
+          <li>Events (Weddings, birthdays, etc.)</li>
+          <li>Portaits (Headshots, Passports, etc.)</li>
+          <li>Concert Photography</li>
+          <li>Real Estate</li>
+        </ul>
+      </div>
+
+      <div class="services">
+        <h3>Pricing Range</h3>
+        <ul>
+          <li><span class="bold">Events:</span> Attendee (0-500), deposit requied</li>
+          <li><span class="bold">Portaits:</span> $300 per person</li>
+          <li><span class="bold">Concert:</span> $250 per show</li>
+          <li><span class="bold">Real Estate:</span> $300 per house</li>
+        </ul>
+      </div>
+
+      <!-- Form for commission requesting will go here -->
+      <div id="comm_request">
+        <h3>Submit a request for commission:</h3>
+        commission request form will go here
+      </div>
     </main>
 
     <!-- Base footer that will include a signup for newsletter form and credit tag -->
@@ -84,10 +146,11 @@
 
       <div id="copyright">
         <p>
-          &copy; Joe Marinaro Photography 1991 - Present &middot;
-          Web Design credit goes to
+          &copy; Joe Marinaro Photography 1991 - Present &middot; Web Design
+          credit goes to
           <a href="https://github.com/SleepyDroids" target="_blank"
-            >@SleepyDroids</a>
+            >@SleepyDroids</a
+          >
           &middot; Icon credit goes to
           <a href="https://icons8.com/" target="_blank">icons8</a>
         </p>

@@ -12,11 +12,14 @@
       rel="stylesheet"
     />
     <!-- Additional font meant to be used for the main header text -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
-<!-- Adding a custon favicon just because -->
-<link rel="icon" type="image/x-icon" href="./images/icons8-camera-60.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Adding a custon favicon just because -->
+    <link rel="icon" type="image/x-icon" href="./images/icons8-camera-60.png" />
     <title>307 SBA - Joe's Photography - About</title>
     <!-- Using a universal style sheet for all pages, unique elements will go into the internal style per each .html file -->
     <style>
@@ -35,7 +38,7 @@
       }
 
       #profile_pic {
-        width: 40%;
+        width: min(50vw, 250px);
         padding: 4%;
       }
 
@@ -46,14 +49,18 @@
 
       #camera_table {
         width: 100%;
-        text-align: center;
+      }
+
+      #camera_table .table_title {
+        width: 100%;
+        background-color: aqua;
+          font-family: "Patua One", serif;
+          font-size: 1rem;
       }
     </style>
   </head>
 
   <body>
-    <!-- Current objective: continue to work on customizing the index page, add animations  -->
-
     <!-- This is the header intended to be the main structure across all pages for consistency -->
     <header>
       <h1>Joe's Photography</h1>
@@ -118,12 +125,12 @@
       <section class="section_2">
         <!-- Created a table based upon Joe's most commonly used cameras -->
         <table id="camera_table">
-          <th>Most commonly used cameras</th>
+<!-- <thead><th>Most commonly used cameras</th></thead> -->
           <tr>
-            <th>Name</th>
-            <th>Maker</th>
-            <th>Model</th>
-            <th>Type</th>
+            <th class="table_title">Name</th>
+            <th class="table_title">Maker</th>
+            <th class="table_title">Model</th>
+            <th class="table_title">Type</th>
           </tr>
 
           <tr>
@@ -184,8 +191,8 @@
 
       <div id="copyright">
         <p>
-          &copy; Joe Marinaro Photography 1991 - Present &middot;
-          Web Design credit goes to
+          &copy; Joe Marinaro Photography 1991 - Present &middot; Web Design
+          credit goes to
           <a href="https://github.com/SleepyDroids" target="_blank"
             >@SleepyDroids</a
           >
