@@ -8,8 +8,10 @@ function goToLink() {
     // Thank you to MDN & W3Schools for helping me figure out this function <3
     // window property points to the window object itself
     // window.location provides information about the current URL and allows for navigation
+    // window.location is read-only which is why I need .href
     // window.location.href returns the current url of the window I am in
-    // I set it equal to my variable
+    // I set it equal to my variable 
+    // So that the current window changes to my nav variable when triggered
     // .value property refers to the option value in my drop down by going to the hrefs I already set up in the HTML
     // onChange Event in the HTML triggers goToLink() when the user changes the select option of a <select> element
     window.location.href = navSelect.value;
