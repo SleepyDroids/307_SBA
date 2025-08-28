@@ -76,8 +76,8 @@
       <h1>Joe's Photography</h1>
       <nav>
         <label for="nav_select">navigation</label>
-        <!-- Will figure out how this onchange() function works later -->
-        <select id="nav_select" onchange="window.location.href=this.value;">
+        <!-- Check external js for the script of the function goToLink() and an explanation of how it works -->
+        <select id="nav_select" onchange="goToLink()">
           <label for="navigation">Navigation</label>
           <option value="#" id="navigation">navigation</option>
           <label for="about">About</label>
@@ -211,5 +211,8 @@
         </p>
       </div>
     </footer>
+
+    <!-- Linking to my external js for the nav drop down menu js -->
+    <script src="./script.js"></script>
   </body>
 </html>
