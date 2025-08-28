@@ -77,7 +77,7 @@ a:hover {
 /* Editing the select drop down menu, even though it is not compatibile with older browsers */
 
 select {
-  /* This is used to reset the drop down menu to it's basic settings */
+  /* This is used to reset the drop down menu to it's basic appearance settings */
   appearance: base-select;
 }
 
