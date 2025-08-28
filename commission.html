@@ -35,7 +35,7 @@
         border-radius: 15px;
         padding: 10px;
         text-align: center;
-        font-size: .7rem;
+        font-size: 0.7rem;
         /* Added align-items to force both of the h3s of the lists to align with one another */
         align-items: stretch;
       }
@@ -46,17 +46,17 @@
 
       .services {
         width: 50%;
-
       }
 
-      .services h3, #comm_request h3 {
-          font-family: "Patua One", serif;
-          text-transform: uppercase;
-          background-color: #eb5e28;
-          color: #fffcf2;
+      .services h3,
+      #comm_request h3 {
+        font-family: "Patua One", serif;
+        text-transform: uppercase;
+        background-color: #eb5e28;
+        color: #fffcf2;
       }
 
-      ul>li {
+      ul > li {
         list-style-type: circle;
       }
 
@@ -88,15 +88,12 @@
       </nav>
     </header>
 
-<!-- Objectives: 1. Add image carousel at the top
+    <!-- Objectives: 1. Add image carousel at the top
  2. Two unordeed lists talking about commission prices/services he offers
  3. Submission form requesting a commission -->
     <main id="main_content">
-
       <!-- Image carousel will go here to showcase Joe's work -->
-      <div id="img_carousel">
-        image carousel will go here
-      </div>
+      <div id="img_carousel">image carousel will go here</div>
 
       <!-- Just using ol for additional html tags -->
       <div class="services">
@@ -112,7 +109,9 @@
       <div class="services">
         <h3>Pricing Range</h3>
         <ul>
-          <li><span class="bold">Events:</span> Attendee (0-500), deposit requied</li>
+          <li>
+            <span class="bold">Events:</span> Attendee (0-500), deposit required
+          </li>
           <li><span class="bold">Portaits:</span> $300 per person</li>
           <li><span class="bold">Concert:</span> $250 per show</li>
           <li><span class="bold">Real Estate:</span> $300 per house</li>
@@ -122,7 +121,46 @@
       <!-- Form for commission requesting will go here -->
       <div id="comm_request">
         <h3>Submit a request for commission:</h3>
-        commission request form will go here
+        <!-- Ideal form structure: 
+         Name: "text"
+         Email: "email"
+         Commission Type: "checkbox"
+         Additiaon details: "message"
+         Submit button  -->
+
+         <form action="#">
+          <p>Name:
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name" />
+          </p>
+
+          <p>Email:
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="user_email" required/>
+          </p>
+
+          <!-- Will return to this when I am not so sleep deprived -->
+          <!-- <p>
+            <fieldset>
+              <legend>Commission(s) you're interested in:</legend>
+              <input type="checkbox" id="comm_type" name="event" />
+              <label for="event">Event</label>
+
+            </fieldset>
+          </p> -->
+
+          <p>
+            Please describe your commission request below: 
+          </p>
+<label for="details">Details:</label>
+          <textarea id="details" name="user_details">
+          </textarea>
+
+          <p>
+            <input type="submit" value="Send Request" />
+          </p>
+
+         </form>
       </div>
     </main>
 

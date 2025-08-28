@@ -47,15 +47,25 @@
         width: 100%;
       }
 
+      img ~ h2 {
+        font-family: "Patua One", serif;
+        color: #eb5e28;
+        font-weight: bolder;
+        text-transform: lowercase;
+        letter-spacing: -1px;
+      }
+
       #camera_table {
         width: 100%;
+        border: 2px solid #eb5e28;
       }
 
       #camera_table .table_title {
         width: 100%;
-        background-color: aqua;
-          font-family: "Patua One", serif;
-          font-size: 1rem;
+        background-color: #eb5e28;
+        color: #fffcf2;
+        font-family: "Patua One", serif;
+        font-size: 1rem;
       }
     </style>
   </head>
@@ -125,7 +135,7 @@
       <section class="section_2">
         <!-- Created a table based upon Joe's most commonly used cameras -->
         <table id="camera_table">
-<!-- <thead><th>Most commonly used cameras</th></thead> -->
+          <!-- <thead><th>Most commonly used cameras</th></thead> -->
           <tr>
             <th class="table_title">Name</th>
             <th class="table_title">Maker</th>
