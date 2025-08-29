@@ -84,6 +84,24 @@
       textarea::placeholder {
         color: #999999;
       }
+
+      .img_1 {
+        border-radius: 50%;
+        max-width: 60%;
+        height: auto;
+        animation: glow 2s infinite alternate;
+        margin: 4% auto;
+      }
+
+      /* Keyframes for the 'glow' animation, using negative pixels to force the shadow to revert into itself */
+      @keyframes glow {
+        from {
+          box-shadow: 0 0 10px -10px #eb5e28;
+        }
+        to {
+          box-shadow: 0 0 10px 10px #eb5e28;
+        }
+      }
     </style>
   </head>
 
@@ -109,12 +127,16 @@
       </nav>
     </header>
 
-    <!-- Objectives: 1. Add image carousel at the top
- 2. Two unordeed lists talking about commission prices/services he offers
- 3. Submission form requesting a commission -->
     <main id="main_content">
       <!-- Image carousel will go here to showcase Joe's work -->
-      <div id="img_carousel">image carousel will go here</div>
+       <!-- Edit: I will EVENTUALLY add an image carousel here once I learn some more js -->
+      <div id="img_carousel">
+        <img
+          class="img_1"
+          src="./images/film_reel.gif"
+          alt="animated gif of a film reel"
+        />
+      </div>
 
       <!-- Just using ol for additional html tags -->
       <div class="services">
@@ -177,8 +199,7 @@
           <textarea
             id="details"
             name="user_details"
-            placeholder="Please include any relevant details such as type of event, date of and if there is a timeline in which you need the services rendered by, etc."
-          ></textarea>
+            placeholder="Please include any relevant details such as type of event, date of and if there is a timeline in which you need the services rendered by, etc."></textarea>
 
           <p>
             <input type="submit" value="Send Request" />
@@ -210,8 +231,7 @@
           &copy; Joe Marinaro Photography 1991 - Present &middot; Web Design
           credit goes to
           <a href="https://github.com/SleepyDroids" target="_blank"
-            >@SleepyDroids</a
-          >
+            >@SleepyDroids</a>
           &middot; Icon credit goes to
           <a href="https://icons8.com/" target="_blank">icons8</a>
         </p>
