@@ -89,6 +89,9 @@
         border-radius: 50%;
         max-width: 60%;
         height: auto;
+        /* @keyframes name | duration | iteration count | direction */
+        /* animation-iteration-count is set to infinite in the shorthand so that the glow keeps looping */
+        /* animation-direction is set to alternate to make the glow pulse since it alternates between playing the sequence forwards and back */
         animation: glow 2s infinite alternate;
         margin: 4% auto;
       }
@@ -96,6 +99,8 @@
       /* Keyframes for the 'glow' animation, using negative pixels to force the shadow to revert into itself */
       @keyframes glow {
         from {
+          /* Four length values and a color */
+          /* <length> | <length> | <length> | <length> | <color> */
           box-shadow: 0 0 10px -10px #eb5e28;
         }
         to {
@@ -230,8 +235,7 @@
         <p>
           &copy; Joe Marinaro Photography 1991 - Present &middot; Web Design
           credit goes to
-          <a href="https://github.com/SleepyDroids" target="_blank"
-            >@SleepyDroids</a>
+          <a href="https://github.com/SleepyDroids" target="_blank">@SleepyDroids</a>
           &middot; Icon credit goes to
           <a href="https://icons8.com/" target="_blank">icons8</a>
         </p>
