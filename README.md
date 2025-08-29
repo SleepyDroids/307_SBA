@@ -5,17 +5,20 @@ A primarily HTML/CSS template base code (with a hint of Javascript) for a portfo
 
 Website is intended to show case his work and be able to allow visitors to request commissions from him. 
 
+All photographs provided by my talented friend Joe &copy;
+
 # Coding Languages Used
 
 A mixture of HTML/CSS and a small piece of a custom Javascript function (used for the navigation drop down menu). 
 
-Used various selectors and pseduo selectors and elements to meet the CSS requirements of the SBA. Also used a singular external style sheet for all three pages while utilizing internal styling for elements that were unique to that page. 
+Used various selectors and pseduo selectors and elements to meet the CSS requirements of the SBA. Also used a singular external style sheet for all three pages while utilizing internal styling for elements that were unique to that page. Also used 10+ html elements, including semantic HTML for improved SEO.  
 
-# Long Term Objectives
+# Future Objectives
 
+- Clean up HTML/CSS for improved consistency outside of the initial requirements of the SBA. 
 - Add camera meta data to each photo (iso, camera model it was taken with, resolution, etc.)
 - An actually functional commission request form. 
-- Better responsiveness and simplification of overall aesthetic. 
+- Improved responsiveness and simplification of overall aesthetic. 
 - Dark and light mode functionality for accessibility. 
 - More DOM manipulation with Javascript in order to make the site as a whole more dynamic and responsive. 
 
