@@ -64,6 +64,7 @@ nav {
 a {
   color: #eb5e28;
   text-decoration: none;
+  transition: color 0.3s ease-in, text-decoration 0.3s ease-in;
 }
 
 a:hover {
@@ -128,6 +129,7 @@ input {
   color: #fffcf2;
   border-radius: 5%;
   font-size: 0.6rem;
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
 [type="submit"]:hover {
