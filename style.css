@@ -14,8 +14,6 @@ body {
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
-  /* Additional font from google fonts for the main title header */
-
   font-weight: 400;
   font-style: normal;
 }
@@ -30,7 +28,7 @@ header {
   width: 100%;
   height: auto;
   /* Converted hex code into rgba to make the background semi-opague but make sure the text was unaffected by opacity */
-  background-color: rgba(37, 36, 34, 0.8);
+  background-color: rgba(37, 36, 34, 0.7);
   color: #fffcf2;
   position: fixed;
   top: 0;
@@ -42,6 +40,7 @@ header {
 
 /* The text header of the page */
 header > h1 {
+  /* Additional font from google fonts for the main title header */
   font-family: "Patua One", serif;
   width: 50%;
   text-transform: lowercase;
@@ -73,7 +72,6 @@ a:hover {
 }
 
 /* Editing the select drop down menu, even though it is not compatibile with older browsers */
-
 select {
   /* This is used to reset the drop down menu to it's basic appearance settings */
   appearance: base-select;
@@ -96,7 +94,7 @@ select {
   text-align: center;
   font-size: 0.65rem;
   width: 100%;
-  background-color: rgba(37, 36, 34, 0.8);
+  background-color: rgba(37, 36, 34, 0.7);
   color: #fffcf2;
   position: fixed;
   bottom: 0;
