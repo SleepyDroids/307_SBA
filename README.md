@@ -18,3 +18,7 @@ Used various selectors and pseduo selectors and elements to meet the CSS require
 - Better responsiveness and simplification of overall aesthetic. 
 - Dark and light mode functionality for accessibility. 
 - More DOM manipulation with Javascript in order to make the site as a whole more dynamic and responsive. 
+
+# @SleepyDroids
+
+You can visit the repo for this project by clicking [here](https://github.com/SleepyDroids/307_SBA). For all other works, please [click here](https://github.com/SleepyDroids).
